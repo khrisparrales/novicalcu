@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vinocalcu</title>
+    <script src="/app.js"></script>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="row g-3 container-fluid">
+      <h1>Vinocalcu</h1>
+      <div class="col-auto">
+        <input
+          type="text"
+          name="base"
+          id="base"
+          onkeyup="if(event.keyCode===13){myFunction()}"
+          class="form-control"
+        />
+        <label for="base">Ingrese el valor base</label>
+      </div>
+      <div class="col-auto">
+        <button
+          class="btn btn-primary mb-3"
+          id="btnfunction"
+          onclick="myFunction()"
+        >
+          Calcular
+        </button>
+      </div>
+      <div class="row">
+        <div class="col">
+          <h2>El valor con la suma (40) es:</h2>
+          <h2 id="resultadosumatotal"></h2>
+          <h2>El valor con suma del porcentaje (10%) es:</h2>
+          <h2 id="resultadosumaporcentaje"></h2>
+        </div>
+        <div class="col">
+          <h2>El valor base con suma del porcentaje (10%) es:</h2>
+          <h2 id="resultadobasesumaporcentaje"></h2>
+          <h2>El valor base con resta del porcentaje (12%) es:</h2>
+          <h2 id="resultadobasesumaporcentaje12"></h2>
+        </div>
+      </div>
+    </div>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
