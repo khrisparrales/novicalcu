@@ -44,4 +44,13 @@ let debitoiva=valordebito/1.12;
   document.getElementById("resultado9c").innerHTML = valor9c+' sin iva '+valor9c/1.12;
   document.getElementById("resultado6c").innerHTML = valor6c+' sin iva '+valor6c/1.12;
   document.getElementById("resultado3c").innerHTML = valor3c+' sin iva '+valor3c/1.12;
+
+  document.getElementById("cuota12c").innerHTML =
+  valor12c/12;
+  document.getElementById("cuota9c").innerHTML =
+  valor9c/9;
+  document.getElementById("cuota6c").innerHTML =
+  valor6c/6;
+  document.getElementById("cuota3c").innerHTML =
+  valor3c/3;
 }
