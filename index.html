@@ -1,41 +1,61 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vinocalcu</title>
-    <script src="app.js"></script>
 
-    <!-- Bootstrap CSS -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
-      crossorigin="anonymous"
-    />
-  </head>
-  <body>
-    <div class="row g-3 container-fluid">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vinocalcu</title>
+  <script src="app.js"></script>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+
+  <style>
+    body {
+      padding: 20px;
+      background-color: #343a40; /* Color de fondo oscuro */
+      color: #ffffff; /* Color de texto claro */
+    }
+
+    h1 {
+      margin-bottom: 10px;
+    }
+
+    .col {
+      margin-top: 20px;
+    }
+
+    .form-control {
+      margin-bottom: 10px;
+      background-color: #495057; /* Color de fondo oscuro para el formulario */
+      color: #ffffff; /* Color de texto claro para el formulario */
+    }
+
+    .btn-primary {
+      margin-top: 10px;
+      background-color: #007bff; /* Color de fondo azul para el botón */
+      border-color: #007bff; /* Color del borde azul para el botón */
+    }
+
+    .btn-primary:hover {
+      background-color: #0056b3; /* Cambio de color al pasar el ratón por encima */
+      border-color: #0056b3;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="row g-3">
       <h1>Vinocalcu</h1>
       <div class="col-auto">
-        <input
-          type="text"
-          name="base"
-          id="base"
-          onkeyup="if(event.keyCode===13){myFunction()}"
-          class="form-control"
-        />
+        <input type="text" name="base" id="base" onkeyup="if(event.keyCode===13){myFunction()}" class="form-control" />
         <label for="base">Ingrese el valor base</label>
       </div>
       <div class="col-auto">
-        <button
-          class="btn btn-primary mb-3"
-          id="btnfunction"
-          onclick="myFunction()"
-        >
-          Calcular
-        </button>
+        <button class="btn btn-primary mb-3" id="btnfunction" onclick="myFunction()">Calcular</button>
       </div>
       <div class="row">
         <div class="col">
@@ -43,7 +63,7 @@
           <h2 id="baseiva"></h2>
           <h1>El valor con debito es:</h1>
           <h2 id="resultadosumatotal"></h2>
-          
+
           <h1>El valor con corriente es:</h1>
           <h2 id="resultadosumaporcentaje"></h2>
         </div>
@@ -67,11 +87,10 @@
         </div>
       </div>
     </div>
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+  </div>
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+
 </html>
