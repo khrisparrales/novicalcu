@@ -10,9 +10,7 @@ function myFunction() {
   /**validar que funcione con comas */
   valorBase = document.getElementById("base").value;
   valorBase = valorBase.replace(",", ".");
-
-
-
+  valoriva =1.15;
 
   valorBase = parseFloat(valorBase);
   console.log(valorBase);
@@ -32,18 +30,18 @@ function myFunction() {
   valorbasesuma = valorbasesuma.toFixed(3);
   valor12 = valorBase - Math.floor(valorBase * 12) / 100;
   valor12 = valor12.toFixed(3);
-let debitoiva=valordebito/1.12;
+let debitoiva=valordebito/valoriva;
   /**Mostrar el valor en la pagina */
-  document.getElementById("baseiva").innerHTML = valorBase/1.12;  
-  document.getElementById("resultadosumatotal").innerHTML = valordebito +' sin iva '+valordebito/1.12;
+  document.getElementById("baseiva").innerHTML = valorBase/valoriva;  
+  document.getElementById("resultadosumatotal").innerHTML = valordebito +' sin iva '+valordebito/valoriva;
 
   document.getElementById("resultadosumaporcentaje").innerHTML =
-    valorporcentaje+' sin iva '+valorporcentaje/1.12;
+    valorporcentaje+' sin iva '+valorporcentaje/valoriva;
   document.getElementById("resultado12c").innerHTML =
-    valor12c+' sin iva '+valor12c/1.12;
-  document.getElementById("resultado9c").innerHTML = valor9c+' sin iva '+valor9c/1.12;
-  document.getElementById("resultado6c").innerHTML = valor6c+' sin iva '+valor6c/1.12;
-  document.getElementById("resultado3c").innerHTML = valor3c+' sin iva '+valor3c/1.12;
+    valor12c+' sin iva '+valor12c/valoriva;
+  document.getElementById("resultado9c").innerHTML = valor9c+' sin iva '+valor9c/valoriva;
+  document.getElementById("resultado6c").innerHTML = valor6c+' sin iva '+valor6c/valoriva;
+  document.getElementById("resultado3c").innerHTML = valor3c+' sin iva '+valor3c/valoriva;
 
   document.getElementById("cuota12c").innerHTML =
   valor12c/12;
